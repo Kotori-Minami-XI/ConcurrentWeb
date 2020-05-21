@@ -29,4 +29,8 @@
         </property>
     </bean>
 
+    <bean id="webCounter" class="com.Kotori.domain.WebCounter">
+        <constructor-arg index="0" name="userClickCounter" value="0"></constructor-arg>
+    </bean>
+
 </beans>
