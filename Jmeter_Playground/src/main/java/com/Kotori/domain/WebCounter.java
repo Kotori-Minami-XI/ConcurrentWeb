@@ -1,10 +1,7 @@
 package com.Kotori.domain;
 
-public class WebCounter {
-    public WebCounter(Integer userClickCounter) {
-        this.userClickCounter = userClickCounter;
-    }
 
+public class WebCounter {
     private Integer userClickCounter;
 
     public Integer getUserClickCounter() {

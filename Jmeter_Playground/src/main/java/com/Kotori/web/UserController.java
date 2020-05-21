@@ -3,10 +3,14 @@ package com.Kotori.web;
 import com.Kotori.domain.AjaxResult;
 import com.Kotori.domain.User;
 import com.Kotori.domain.WebCounter;
+import org.apache.shiro.crypto.hash.Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
+import java.util.HashMap;
 
 @Controller
 public class UserController {
@@ -27,11 +31,7 @@ public class UserController {
 
     @RequestMapping("/userClick.action")
     public void userClick(){
-        //System.out.println("userClick");
-        Integer c = webCounter.getUserClickCounter();
-        c = c + 1;
-        webCounter.setUserClickCounter(c);
+        webCounter.setUserClickCounter(webCounter.getUserClickCounter() + 1);
         System.out.println(webCounter.getUserClickCounter());
     }
-
 }

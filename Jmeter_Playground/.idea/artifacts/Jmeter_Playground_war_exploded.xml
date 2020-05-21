@@ -1,12 +1,20 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Jmeter_Playground:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Jmeter_Playground_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/SSM_Maven_Template</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Jmeter_Playground</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Jmeter_Playground" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.18" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.15" />
@@ -60,6 +68,9 @@
           <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.2" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-math3:3.6.1" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/SSM_Maven_Template/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Jmeter_Playground/web/Web" />
     </root>
