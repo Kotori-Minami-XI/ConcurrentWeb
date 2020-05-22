@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="personBean" class="com.Kotori.domain.Person">
+        <property name="personName" value="Kotori"></property>
+        <property name="personAge" value="15"></property>
+    </bean>
+
+    <bean id="carBean" class="com.Kotori.domain.Car">
+        <constructor-arg index="0" name="carName" value="Honda"></constructor-arg>
+        <constructor-arg index="1" name="carAge" value="4"></constructor-arg>
+    </bean>
+
+    <bean id="dogBean" class="com.Kotori.domain.Dog" factory-method="buildDog" ></bean>
+
+    <bean id="shoeFactoryBean" class="com.Kotori.domain.ShoeFactoryBean" ></bean>
+
+</beans>
