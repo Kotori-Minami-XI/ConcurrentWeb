@@ -30,7 +30,7 @@
 
 		<!-- Data base driver -->
 		<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-						connectionURL="jdbc:mysql://localhost:3306/k_erp?characterEncoding=utf-8&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"
+						connectionURL="jdbc:mysql://localhost:3306/concurrentweb?characterEncoding=utf-8&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"
 						userId="root" password="19926172xz">
 		</jdbcConnection>
 
@@ -63,10 +63,6 @@
 		</javaClientGenerator>
 
 <!--		<table tableName="menu"></table>-->
-<!--		<table tableName="employee"></table>-->
-<!--		<table tableName="department"></table>-->
-<!--		<table tableName="role"></table>-->
-<!--		<table tableName="permission"></table>-->
-		<table tableName="systemlog"></table>
+		<table tableName="student"></table>
 	</context>
 </generatorConfiguration>

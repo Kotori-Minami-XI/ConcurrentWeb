@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.Kotori</groupId>
-  <artifactId>SSM_Maven_Template</artifactId>
+  <artifactId>Concurrent_Web</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>SSM_Maven_Template Maven Webapp</name>
+  <name>Concurrent Web Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -251,7 +251,7 @@
   </dependencies>
 
   <build>
-    <finalName>SSM_Maven_Template</finalName>
+    <finalName>Concurrent Web</finalName>
     <plugins>
       <plugin>
         <groupId>org.mybatis.generator</groupId>

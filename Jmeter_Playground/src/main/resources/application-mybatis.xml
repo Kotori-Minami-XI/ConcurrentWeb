@@ -41,7 +41,7 @@
         <!-- Location for the core configuration file -->
         <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
         <!--mapper xml files location-->
-<!--        <property name="mapperLocations" value="classpath:com.Kotori.mapper/*Mapper.xml"/>-->
+        <property name="mapperLocations" value="classpath:com.Kotori.mapper/*Mapper.xml"/>
     </bean>
 
     <!-- Mapper interface scanner -->

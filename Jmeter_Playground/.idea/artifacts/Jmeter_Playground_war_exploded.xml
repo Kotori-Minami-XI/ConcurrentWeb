@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Jmeter_Playground:war exploded">
-    <output-path>$PROJECT_DIR$/target/SSM_Maven_Template</output-path>
+    <output-path>$PROJECT_DIR$/target/Concurrent Web</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -72,7 +72,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/SSM_Maven_Template/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/Concurrent Web/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Jmeter_Playground/web/Web" />
     </root>

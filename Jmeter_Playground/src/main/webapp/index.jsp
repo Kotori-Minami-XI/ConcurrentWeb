@@ -21,6 +21,7 @@
     <input type="submit" id="submit_btn" value="submit"><br>
 </form>
 
+<a href="${pageContext.request.contextPath}/selectAllStudent.action">selectAllStudent</a>
 
 </body>
 
